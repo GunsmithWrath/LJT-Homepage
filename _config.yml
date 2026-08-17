@@ -10,8 +10,7 @@ repository               : "GunsmithWrath/LJT-Homepage"
 
 author:
   name             : "Junteng Liu"
-  bio              : "First-year Ph.D. candidate at HKUST NLP Group"
-  employer         : "Hong Kong University of Science and Technology"
+  bio              : "First-year PhD candidate at HKUST NLP Group"
   email            : "jliugi@connect.ust.hk"
   googlescholar    : "https://scholar.google.com/citations?hl=en&user=tbK9jl4AAAAJ&view_op=list_works&sortby=pubdate"
   github           : "Vicent0205"
@@ -20,7 +19,7 @@ author:
 teaser                   :
 breadcrumbs              : false
 words_per_minute         : 160
-future                   : true
+future                   : false
 read_more                : "disabled"
 talkmap_link             : false
 atom_feed:
@@ -65,6 +64,7 @@ keep_files:
   - .svn
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
 markdown: kramdown
 highlighter: rouge
 lsi: false
@@ -81,21 +81,10 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-collections:
-  publications:
-    output: true
-    permalink: /:collection/:path/
-
 defaults:
   - scope:
       path: ""
       type: pages
-    values:
-      layout: single
-      author_profile: true
-  - scope:
-      path: ""
-      type: publications
     values:
       layout: single
       author_profile: true
@@ -122,13 +111,6 @@ whitelist:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jemoji
-
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
 
 compress_html:
   clippings: all
